@@ -1,0 +1,4 @@
+[Autorun]
+Open=Discord.py
+Action=Python Discord.py
+Label=Test

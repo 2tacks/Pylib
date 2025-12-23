@@ -1,0 +1,19 @@
+First Do 
+Python Discord.py 
+if it opens example.html in a new window of ur browser then ggs it works 
+use a ai to decode the bug, 
+
+To Converto into a exe do,
+
+pip install pyinstaller
+
+then do 
+
+pyinstaller --onefile --windowed Discord.py
+
+then u will find the exe at
+
+dist/Discord.exe
+ in the project root.
+
+- $tacks - 

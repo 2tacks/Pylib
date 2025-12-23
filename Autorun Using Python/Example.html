@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoRun Script Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f0f23, #1a1a2e, #16213e);
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            overflow: hidden;
+        }
+        
+        .ascii-container {
+            text-align: center;
+            max-width: 90vw;
+            max-height: 90vh;
+            font-size: clamp(8px, 2vw, 16px);
+            line-height: 1.1;
+            white-space: pre;
+            color: #00ff88;
+            text-shadow: 
+                0 0 5px #00ff88,
+                0 0 10px #00ff88,
+                0 0 20px #00ff88;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 20px #00ff88; }
+            to { text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88, 0 0 40px #00ff88; }
+        }
+        
+        h1 {
+            position: absolute;
+            top: 20px;
+            color: #ffffff;
+            font-size: 24px;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .ascii-container {
+                font-size: clamp(6px, 4vw, 12px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>AutoRun Script Example</h1>
+    <pre class="ascii-container"> 
+     ___         __        ____                 _____           _       __     ______                           __         
+    /   | __  __/ /_____  / __ \__  ______     / ___/__________(_)___  / /_   / ____/  ______ _____ ___  ____  / /__      
+   / /| |/ / / / __/ __ \/ /_/ / / / / __ \    \__ \/ ___/ ___/ / __ \/ __/  / __/ | |/_/ __ `/ __ `__ \/ __ \/ / _ \     
+  / ___ / /_/ / /_/ /_/ / _, _/ /_/ / / / /   ___/ / /__/ /  / / /_/ / /_   / /____&gt;  &lt;/ /_/ / / / / / / /_/ / /  __/     
+ /_/  |_\__,_/\__/\____/_/ |_|\__,_/_/ /_/   /____/\___/_/  /_/ .___/\__/  /_____/_/|_|\__,_/_/ /_/ /_/ .___/_/\___/      
+                                                             /_/                                     /_/                  
+</pre>
+</body>
+</html>
